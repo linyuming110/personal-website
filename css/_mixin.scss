@@ -1,0 +1,56 @@
+// Here are some variables, then a mixin and then an application of the mixin - this will only compile using Sass 3.2 
+//reference: https://gist.github.com/johnpeele/8982225 How to use media query to control response
+
+$XS: 200px; // 200px;
+$S: 320px; // 300px
+$SM: 560px; // 560px
+$M: 760px; // 760px
+$L: 1080px; // 1008px
+$XL: 1920px; // 1760px
+$XXL: 2880px; // 2880px
+
+@mixin MQ($canvas) {
+
+    @if $canvas==XS {
+        @media only screen and (max-width: $XS) {
+            @content;
+        }
+    }
+
+    @else if $canvas==S {
+        @media screen and (max-width: $S) {
+            @content;
+        }
+    }
+
+    @else if $canvas==SM {
+        @media screen and (max-width: $M) {
+            @content;
+        }
+    }
+
+    @else if $canvas==M {
+        @media screen and (max-width: $M) {
+            @content;
+        }
+    }
+
+    @else if $canvas==L {
+        @media screen and (max-width: $L) {
+            @content;
+        }
+    }
+
+    @else if $canvas==XL {
+        @media screen and (max-width: $XL) {
+            @content;
+        }
+    }
+
+    @else if $canvas==XXL {
+        @media screen and (max-width: $XXL) {
+            @content;
+        }
+    }
+
+}
