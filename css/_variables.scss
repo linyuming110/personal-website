@@ -1,4 +1,6 @@
 
+$lineCount: 4;
+$count: 8;
 
 // Colors
 $white: #FFFFFF;
@@ -25,4 +27,12 @@ $grey-text: #8B8B8B;
 $base-font-color: $grey;
 $heading-font-color: $blue;
 $action-color: $mainDark;
+
+@function randomNum($max, $min: 0, $u: 1) {
+    @return ($min + random($max)) * $u;
+}
+
+@function randomColor() {
+    @return rgb(randomNum(255), randomNum(255), randomNum(255));
+}
  

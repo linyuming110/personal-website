@@ -3,11 +3,11 @@
 
 $XS: 200px; // 200px;
 $S: 320px; // 300px
-$SM: 560px; // 560px
-$M: 760px; // 760px
-$L: 1080px; // 1008px
-$XL: 1920px; // 1760px
-$XXL: 2880px; // 2880px
+$SM: 576px; // 560px
+$M: 768px; // 760px
+$L: 992px; // 1008px
+$XL: 1200px; // 1760px
+$XXL: 1440px; // 2880px
 
 @mixin MQ($canvas) {
 
